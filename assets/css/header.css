@@ -2,7 +2,6 @@
   background-color: #1a2433;
   border-radius: 9999px;
   width: 85vw;
-  margin: 0 auto;
   margin-top: 10px;
   padding: 0.5rem 1rem;
   display: flex;
@@ -10,21 +9,20 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 10vw; /* ← 右寄せにする */
   z-index: 1000;
   transition: width 0.4s ease, padding 0.4s ease;
-  overflow: hidden; /* コンテンツを隠す */
+  overflow: hidden;
 }
 
-/* === 閉じた状態 === */
+/* 閉じたとき */
 .site-header.collapsed {
-  width: 3rem;              /* toggleボタン分だけの幅に */
-  padding-left: 0;          /* 左余白を消す */
-  padding-right: 0.5rem;    /* ボタン右余白だけ維持 */
+  width: 3rem; /* ボタンだけ残す */
+  padding-left: 0; /* 左余白カット */
+  padding-right: 0.5rem;
 }
 
-/* ナビやロゴなどを非表示に（フェードアウト） */
+/* ロゴやナビを隠す */
 .site-header.collapsed .nav-items,
 .site-header.collapsed .site-logo,
 .site-header.collapsed .other-content {
@@ -34,14 +32,14 @@
   transition: opacity 0.3s ease;
 }
 
-/* toggleボタン */
+/* トグルボタン */
 .toggle-btn {
   background: none;
   border: none;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  flex-shrink: 0; /* ボタンが潰れないように固定 */
+  flex-shrink: 0;
   transition: color 0.3s ease;
 }
 
