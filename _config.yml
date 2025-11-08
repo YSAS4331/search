@@ -1,0 +1,8 @@
+title: "YSAS4331 検索"
+description: "YSAS4331の公開サイトを検索するところです"
+url: "https://ysas4331.github.io"
+baseurl: "/Search"
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
