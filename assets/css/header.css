@@ -1,54 +1,45 @@
 .site-header {
-  background-color: #1a2433;
-  border-radius: 9999px;
-  width: 85vw;
-  margin: 0 auto;
-  margin-top: 10px;
+  background-color: #222;       /* ダーク背景 */
   padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+/* ナビゲーション全体 */
+.nav-items {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  right: 50%;
-  transform: translateX(50%);
-  z-index: 1000;
-  overflow: hidden;
-  transition:
-    width 0.45s ease,
-    padding 0.45s ease,
-    transform 0.45s ease;
-  transform-origin: right center; /* 右端を軸にする */
+  justify-content: flex-start;
+  gap: 1.5rem;                  /* リンク間の余白 */
+}
+.nav-items a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-/* トグルボタンは常に右端 */
-.toggle-btn {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.6rem;
+.nav-items a:hover {
+  color: #f0c040;               /* ホバー時のアクセントカラー */
+}
+
+/* オーバーフローメニュー */
+.overflow-menu {
+  margin-left: auto;            /* 右端に寄せる */
   cursor: pointer;
-  z-index: 1100;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #fff;
+  transition: color 0.2s ease;
 }
 
-/* 閉じてるとき（右端に吸い込まれる） */
-.site-header.collapsed {
-  width: 3rem;
-  padding-left: 0;
-  padding-right: 0.5rem;
-  transform: translateX(0); /* ←右固定 */
+.overflow-menu:hover {
+  color: #f0c040;
 }
 
-/* 中のコンテンツをフェードアウト */
-.site-header.collapsed .nav-items,
-.site-header.collapsed .site-logo,
-.site-header.collapsed .other-content {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .nav-items {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
 }
