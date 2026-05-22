@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Youtube ローカルプレイリスト - localStorage",
+    "url": "/Useful/Youtube/Local/",
+    "tags": [
+      "Useful Tools",
+      "Youtube",
+      "localStorage"
+    ],
+    "description": "Useful Tools - YouTube動画をローカルで管理・再生できる軽量プレイリストツール"
+  },
+  {
+    "title": "NISTガイドライン基準 パスワードチェッカー",
+    "url": "/Useful/Password/Checker",
+    "tags": [
+      "Useful Tools",
+      "Password",
+      "Security"
+    ],
+    "description": "NISTガイドライン準拠のパスワード強度チェッカー。漏洩リスト照合で安全性を確認できます"
+  },
+  {
+    "title": "Splatoon3 戦績管理ツール",
+    "url": "/Splatoon3",
+    "tags": [
+      "Useful Tools",
+      "Splatoon3",
+      "Splatoon"
+    ],
+    "description": "Splatoon3の勝敗やステージやキル数などを記録して解析できるツールです"
+  },
+  {
+    "title": "Splatoon3 Battle Logger",
+    "url": "/Sp3/",
+    "tags": [
+      "Splatoon", "Splatoon3", "indexedDB"
+    ],
+    "description": "Splatoon3 の勝敗やステージを記録して、様々なジャンルごとに勝率などを解析できます"
+  }
+]
